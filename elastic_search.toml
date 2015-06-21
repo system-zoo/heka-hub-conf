@@ -1,0 +1,10 @@
+[ESJsonEncoder]
+es_index_from_timestamp = true
+type_name = "%{Type}"
+
+[ElasticSearchOutput]
+server = "http://172.31.6.218:9200"
+message_matcher = "Fields[payload_name] == 'systemzoo_encoder' || Type == 'systemzoo.log' || Type == 'heka.statmetric' || Type == 'ProcessInput'"
+encoder = "ESJsonEncoder"
+flush_interval = 50
+

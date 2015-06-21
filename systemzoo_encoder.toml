@@ -1,0 +1,8 @@
+[systemzoo_encoder]
+type = "SandboxEncoder"
+filename = "lua_encoders/systemzoo_encoder.lua"
+ticker_interval = 1
+preserve_data = true
+
+[systemzoo_encoder.config]
+type = "systemzoo.log"

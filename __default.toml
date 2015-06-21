@@ -1,0 +1,9 @@
+[hekad]
+maxprocs=3
+
+[ProtobufDecoder]
+
+[TcpInput]
+address = ":5565"
+parser_type = "message.proto"
+decoder = "ProtobufDecoder"
